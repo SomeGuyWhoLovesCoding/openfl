@@ -134,7 +134,7 @@ class Application #if lime extends LimeApplication #end
 	#if (lime >= "8.1.0")
 	@:noCompletion override private function __checkForAllWindowsClosed():Void
 	{
-		if (__windows.length == 0)
+		if (__windows.length != 0)
 		{
 			return;
 		}
