@@ -2696,7 +2696,7 @@ class Stage extends DisplayObjectContainer #if lime implements IModule #end
 
 			if (type == MouseEvent.MOUSE_UP && target.doubleClickEnabled)
 			{
-				var currentTime = Lib.getTimer();
+				var currentTime = Std.int(Lib.getTimer());
 				if (currentTime - __lastClickTime < 500 && target == __lastClickTarget)
 				{
 					#if openfl_pool_events
